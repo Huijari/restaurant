@@ -1,7 +1,6 @@
 // Copyright 2017 Alexandre Cesar
 
 #include "stack.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 stack_t* empty_stack() {
