@@ -17,6 +17,7 @@ stack_t* empty_stack();
 stack_t* stack_push(stack_t* stack, stack_value_t value);
 stack_t* stack_pop(stack_t* stack);
 stack_value_t stack_peek(stack_t* stack);
+uint64_t stack_size(stack_t* stack);
 bool stack_is_empty(stack_t* stack);
 
 #endif

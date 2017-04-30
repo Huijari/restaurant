@@ -23,6 +23,11 @@ stack_value_t stack_peek(stack_t* stack) {
   assert(!stack_is_empty(stack));
   return stack->value;
 }
+uint64_t stack_size(stack_t* stack) {
+  if (stack_is_empty(stack))
+    return 0;
+  return 1 + stack_size(stack->next);
+}
 bool stack_is_empty(stack_t* stack) {
   return stack == empty_stack();
 }
