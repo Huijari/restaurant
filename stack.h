@@ -13,8 +13,8 @@ struct stack_t {
 };
 
 stack_t* empty_stack();
-stack_t* push(stack_t* stack, stack_value_t value);
-stack_t* pop(stack_t* stack);
-stack_value_t peek(stack_t* stack);
+stack_t* stack_push(stack_t* stack, stack_value_t value);
+stack_t* stack_pop(stack_t* stack);
+stack_value_t stack_peek(stack_t* stack);
 
 #endif
