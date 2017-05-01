@@ -9,7 +9,6 @@ state_t* empty_state() {
   state->sum = 0;
   return state;
 }
-
 void state_add(state_t* state, uint64_t value) {
   state->count++;
   state->sum += value;
