@@ -27,6 +27,11 @@ queue_value_t queue_peek(queue_t* queue) {
   assert(!queue_is_empty(queue));
   return queue->value;
 }
+uint64_t queue_size(queue_t* queue) {
+  if (queue_is_empty(queue))
+    return 0;
+  return 1 + queue_size(queue->next);
+}
 bool queue_is_empty(queue_t* queue) {
   return queue == empty_queue();
 }

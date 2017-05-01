@@ -17,6 +17,7 @@ queue_t* empty_queue();
 queue_t* queue_push(queue_t* queue, queue_value_t value);
 queue_t* queue_pop(queue_t* queue);
 queue_value_t queue_peek(queue_t* queue);
+uint64_t queue_size(queue_t* queue);
 bool queue_is_empty(queue_t* queue);
 
 #endif
