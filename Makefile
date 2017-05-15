@@ -3,3 +3,6 @@ restaurant: *.c *.h
 
 run: restaurant
 	./restaurant
+
+tags: tags
+	ctags *.c
