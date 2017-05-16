@@ -17,6 +17,7 @@ guarnicao_service_t* new_guarnicao_service(salada_service_t* salada_service) {
 void guarnicao_step(guarnicao_service_t* guarnicao_service) {
   assert(guarnicao_service != NULL);
 
+  salada_step(guarnicao_service->salada_service);
   for (int i = 0; i < GUARNICAO_NUM_QUEUES; i++)
     if (!queue_is_empty(guarnicao_service->queues[i])) {
       uint64_t value = queue_peek(guarnicao_service->queues[i]);

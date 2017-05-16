@@ -17,6 +17,7 @@ arroz_service_t* new_arroz_service(feijao_service_t* feijao_service) {
 void arroz_step(arroz_service_t* arroz_service) {
   assert(arroz_service != NULL);
 
+  feijao_step(arroz_service->feijao_service);
   for (int i = 0; i < ARROZ_NUM_QUEUES; i++)
     if (!queue_is_empty(arroz_service->queues[i])) {
       uint64_t value = queue_peek(arroz_service->queues[i]);

@@ -17,6 +17,7 @@ feijao_service_t* new_feijao_service(guarnicao_service_t* guarnicao_service) {
 void feijao_step(feijao_service_t* feijao_service) {
   assert(feijao_service != NULL);
 
+  guarnicao_step(feijao_service->guarnicao_service);
   for (int i = 0; i < FEIJAO_NUM_QUEUES; i++)
     if (!queue_is_empty(feijao_service->queues[i])) {
       uint64_t value = queue_peek(feijao_service->queues[i]);
