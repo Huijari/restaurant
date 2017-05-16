@@ -144,3 +144,5 @@ Count	Sum	    Average
 ## Conclusão
 
 Obviamente a solução mais eficiente é adicionar mais filas e caixas ao bandejão, o número de bandejas original não afeta muito para quantidades pequenas de filas/pessoas mas apresenta um funil para maiores quantidades. Com a inclusão dos custos de tais melhorias e de manutenção a análise poderia ser muito mais profunda.
+
+[Repositório no GitHub](https://github.com/huijari/restaurant)
