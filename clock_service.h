@@ -3,7 +3,6 @@
 #ifndef CLOCK_SERVICE_H
 #define CLOCK_SERVICE_H
 
-#include "ficha_service.h"
 #include <inttypes.h>
 
 typedef struct clock_service_t clock_service_t;

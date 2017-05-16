@@ -12,7 +12,7 @@
 
 int main(int argc, char** argv) {
   clock_service_t* clock = new_clock_service();
-  state_t* state = empty_state();
+  state_t* state = new_state(clock);
   restaurant_service_t* restaurant = new_restaurant_service(
     new_ficha_service(
       new_bandeja_service(

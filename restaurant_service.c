@@ -4,7 +4,7 @@
 #include <assert.h>
 #include <stdlib.h>
 
-restaurant_service_t* new_restaurant_sercice(ficha_service_t* ficha_service, clock_service_t* clock_service) {
+restaurant_service_t* new_restaurant_service(ficha_service_t* ficha_service, clock_service_t* clock_service) {
   assert(RESTAURANT_MAX_TIME != 0);
 
   restaurant_service_t* restaurant_service = malloc(sizeof(restaurant_service_t));
