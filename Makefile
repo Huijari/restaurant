@@ -4,5 +4,5 @@ restaurant: *.c *.h
 run: restaurant
 	./restaurant
 
-tags: tags
+tags: *.c
 	ctags *.c
