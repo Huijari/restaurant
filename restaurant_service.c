@@ -16,7 +16,7 @@ void restaurant_step(restaurant_service_t* restaurant_service) {
   assert(restaurant_service != NULL);
 
   ficha_step(restaurant_service->ficha_service);
-  for (int i = 0; i < CLOCK_ENTRIES_BY_TICK; i++)
+  for (int i = 0; i < RESTAURANT_ENTRIES_BY_TICK; i++)
     ficha_add(
       restaurant_service->ficha_service,
       restaurant_service->clock_service->count

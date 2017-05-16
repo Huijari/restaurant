@@ -10,6 +10,7 @@
 #include <stdbool.h>
 
 #define RESTAURANT_MAX_TIME 4 * 60
+#define RESTAURANT_ENTRIES_BY_TICK 2
 
 typedef struct restaurant_service_t restaurant_service_t;
 struct restaurant_service_t {
